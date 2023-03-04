@@ -1,0 +1,209 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.home h1, .contact h1, .service h1, .feedback h1, .profile h1{
+    font-weight: 3.5rem;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    background-color: rgba(7, 101, 189);
+    padding: 10px 25px;
+    font-family: 'Handlee', cursive;
+    color: white;
+    animation: an .5s linear backwards;
+}
+
+@keyframes an{
+    0%{
+        transform: translateX(-750px) scale(0) rotate(0);
+        transform-origin: left;
+    }
+
+    100%{
+        transform: translateX(0px) scale(1) rotate(0);
+        transform-origin: left;
+    }
+}
+
+.service, .contact, .feedback, .profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.profile .row, .service .row, .office, .developer, .carousel-item{
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 30px 20px;
+    animation: an .5s linear backwards;
+    animation-delay: .3s;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* navbar start*/
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-link{
+    border-radius: 5px;
+    color: white;
+    transition: .4s;
+    letter-spacing: 1.5px;
+}
+
+.nav-link:hover{
+    background-color: black;
+    color: white;
+}
+
+.nav-link:focus{
+    color: white;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+}
+
+/* home */
+
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .btn-1{
+    animation: an .5s linear backwards;
+    animation-delay: .3s;
+}
+
+.home .btn-2{
+    animation: an .5s linear backwards;
+    animation-delay: .8s;
+}
+
+/* service */
+
+.sbox{
+    margin: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #e8ded2;
+    letter-spacing: 2px;
+    transition: .4s;
+    animation: an .5s linear backwards;
+}
+
+.box-1{
+    animation-delay: 0.8s;
+}
+
+.box-2{
+    animation-delay: 1s;
+}
+
+.box-3{
+    animation-delay: 1.2s;
+}
+
+.sbox:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 6px 5px black;
+}
+
+/* contact*/
+
+.office-img, .office-address, .de-info, .de-img, .slider{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bolder;
+    color: black;
+}
+
+.developer{
+    animation-delay: 0.8s;
+}
+
+.de-img, .slider{
+    align-items: center;
+}
+
+.de-img img, .slider img{
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+}
+
+/*feedback*/
+
+.slider{
+    padding: 10px;
+}
+
+.carousel-item{
+    padding: 5% 10%;
+}
+
+.slider h2{
+    margin-top: 10px;
+    font-family: 'Handlee', cursive;
+}
+
+/* Profile */
+
+.profile .nav-link{
+    color: black;
+    font-weight: bolder;
+}
+
+.profile .nav-link:hover{
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    height: 40px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 5px 15px;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+    color: black;
+}
+
+::placeholder{
+    color: black;
+    font-weight: bolder;
+}
