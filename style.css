@@ -45,7 +45,7 @@ body{
 
 .profile .row, .service .row, .office, .developer, .carousel-item{
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 30px 20px;
     animation: an .5s linear backwards;
     animation-delay: .3s;
@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6{
 /* navbar start*/
 
 .navbar{
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .nav-link{
